@@ -1,0 +1,13 @@
+header {
+  max-width: 980px;
+  left: 230px;
+  padding: 32px 16px 32px 16px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-pc ul {
+  display: flex;
+  position: absolute;
+  right: 230px;
+}
