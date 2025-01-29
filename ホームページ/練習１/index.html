@@ -10,38 +10,54 @@
 <body>
   <header>
     <div class="logo">
-      <a href="#">MyProfile</a>
+      <a href="index.html">MyProfile</a>
     </div>
     <nav class="nav-pc">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Works</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <article>
-      <section class="main-photo">
-        <img src="image/MainVisual.png" alt="camera" class="camera">
-      </section>
-    </article>
-    <article>
-      <section class="main-message">
-        <h1 class="about">About</h1>
-        <div class="picture-message">
-          <img src="image/about.png" alt="顔写真" class="picture">
-          <div class="message">
-            <h2>Kazuki Asahina</h2>
-            <ul>
-              <li>25歳 長野県佐久市出身</li>
-              <li>ソフトウェア業界でマーケティングに従事</li>
-              <li>趣味はカメラ、愛機はCanon</li>
-              <li>自然を撮影するのが好きで、海や山によく行く</li>
-            </ul>
-          </div>
+    <div class="container">
+      <img src="image/MainVisual.png" alt="カメラ" class="hero">
+    </div>
+    <div class="content">
+      <h1 id="about">About</h1>
+      <div class="message-photo">
+        <img src="image/about.png" alt="顔写真" class="photo">
+        <div class="message">
+          <h2 class="name">Kazuki Asahina</h2>
+          <ul>
+            <li>25歳 長野県佐久市出身</li>
+            <li>ソフトウェア業界でマーケティングに従事</li>
+            <li>趣味はカメラ、愛機はCanon</li>
+            <li>自然を撮影するのが好きで、海や山によく行く</li>
+          </ul>
         </div>
-      </section>
-    </article>
+      </div>
+    </div>
+    <div id="works">
+      <h1>Works</h1>
+      <div class="work-photos">
+        <div class="work">
+          <img src="image/Rectangle 8.png" alt="新潟" class="work-photo">
+          <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+        </div >
+        <div class="work">
+          <img src="image/Rectangle 7.png" alt="木曽" class="work-photo">
+          <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+        </div>
+        <div class="work">
+          <img src="image/Rectangle 9.png" alt="京都" class="work-photo">
+          <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer>
+    <p>© MyProfile. All rights reserved.</p>
+  </footer>
 </body>
 </html>

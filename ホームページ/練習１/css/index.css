@@ -35,61 +35,186 @@ header {
   color: #000000;
   font-weight: 700;
 }
-/*main-photo*/
-.main-photo {
+/*container*/
+.container {
   max-width: 100%;
   margin: 0 auto;
 }
-.camera {
+.hero {
   width: 100%;
   height: auto;
+  max-width: 1440px;
 }
-/*main-message*/
-.main-message {
+/*content*/
+.content {
   text-align: center;
-  width: 820px;
-  height: 402px;
-  position: relative;
-  left: 22%;
-  margin-top: 5%;
+  margin: 4% 22% auto 22%;
+  width: 57%;
+  height: auto;
 }
-.picture-message {
-  display: flex;
-}
-.about {
+#about {
   font-family: Noto Sans JP;
-  font-size: 34px;
   font-weight: 700;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 34px;
 }
-.picture {
-  border-radius: 140px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.message-photo {
+  display: flex;
+  margin-top: 7%;
+}
+.photo {
+  border-radius: 50%;
+  max-width: 280px;
+  max-height: 280px;
 }
 .message {
-  position: relative;
-  left: 401px;
-  top: 123px;
-}
-.message h2 {
+  margin-top: 9.7%;
+  margin-left: 8.4%;
   text-align: left;
+}
+.name {
   font-family: Noto Sans JP;
   font-weight: 700;
   font-size: 24px;
 }
-.message ul {
+.message > ul {
+  list-style: disc;
   list-style-position: inside;
-  position: absolute;
-  top: 53px;
-  left: 14px;
+  margin-top: 6%;
+  margin-left: 8%;
+}
+/*works*/
+#works {
+  text-align: center;
+  margin: 4.9% 24%;
+}
+.work-photos {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 6.5%;
+}
+#works > h1 {
+  font-family: Noto Sans JP;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+.work {
+  flex: 1;
+  max-width: 240px;
+  max-height: 261.42px;
   text-align: left;
 }
-.message li {
-  list-style: disc;
-  font-size: 18px;
+.work-photo {
+  max-width: 100%;
+  max-height: 100%;
 }
+.work > p {
+  font-family: Noto Sans JP;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-top: 2.3%;
+}
+/*footer*/
+footer {
+  font-family: Noto Sans JP;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 56px;
+}
+@media screen and (max-width: 767px) {
+  body {
+    width: auto;
+    height: auto;
+    margin: 0 auto 0 auto;
+  }
+  .logo {
+    font-size: 28px;
+    position: absolute;
+    left: 3px;
+    top: 0;
+  }
+  .nav-pc {
+    font-size: 19px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+  .container {
+    position: relative;
+    top: 100px;
+    max-width: auto;
+  }
+  .content {
+    position: relative;
+    top: 120px;
+    margin: auto;
+  }
+  .message-photo {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo {
+    width: 282px;
+    height: 284px;
+    position: relative;
+    top: 20px;
+    left: -20px;
+  }
+  .message {
+    margin: 0;
+    width: 296px;
+    height: 203px;
+    padding: 0;
+    position: relative;
+    top: 30px;
+    left: -24px;
+  }
+  .message > ul {
+    position: relative;
+    left: -15px;
+    line-height: 133%;
+  }
+  #works {
+    position: relative;
+    top: 140px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .work-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .work-photo {
+    width: 355px;
+  }
+  .work {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+  }
+  .work > p {
+    width: 355px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  footer {
+    position: absolute;
+    top: 1830px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    left: -14%;
+  }
 
+
+
+}
