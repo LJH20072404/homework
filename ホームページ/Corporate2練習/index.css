@@ -111,7 +111,6 @@ main img {
 }
 .news-message a:nth-child(3) {
   margin-left: 20px;
-  padding-right: ;
 }
 .news-message p {
   font-size: 14px;
@@ -169,7 +168,6 @@ main img {
 }
 /*third-container*/
 .third-container {
-  max-width: ;
   display: flex;
   flex-direction: column;
   margin-top: 120px;
@@ -209,6 +207,49 @@ main img {
   line-height: 1.5;
 }
 .business li:nth-child(2) {
+  text-decoration: underline;
+  margin-top: 15px;
+}
+/*forth-container*/
+.forth-container {
+  max-width: 1032px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto 0;
+}
+.company-messages {
+  background-color: white;
+  padding: 100px 139px 100px 62px;
+  max-width: 567px;
+  width: 100%;
+  text-align: left;
+}
+.address-message {
+  margin-top: 50px;
+}
+.address-message li {
+  display: flex;
+  gap: 43px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2.5;
+  font-family: Hiragino Kaku Gothic ProN;
+}
+.company h2 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.company li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.company li:nth-child(2) {
   text-decoration: underline;
   margin-top: 15px;
 }
