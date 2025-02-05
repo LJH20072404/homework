@@ -11,12 +11,7 @@ html {
   line-height: 1.5;
 }
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   max-width: 1440px;
-  width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: rgba(240, 240, 240, 1);
@@ -25,7 +20,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 0;
 }
@@ -56,23 +50,19 @@ header {
 }
 /*main*/
 main {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 /*main-img*/
-main img {
+.first-photo {
   width: 100%;
   display: block;
 }
 /*first-container*/
 .first-container {
   margin: 120px auto 0;
+  max-width: 940px;
 }
 /*news*/
 .news {
@@ -133,6 +123,10 @@ main img {
   align-self: flex-start;
   margin-bottom: 118px;
 }
+#item01 img {
+  width: 100%;
+  
+}
 #item02 {
   flex-basis: 39%;
   align-self: flex-end;
@@ -170,7 +164,8 @@ main img {
 .third-container {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin: 120px auto 0;
+  max-width: 900px;
 }
 .business {
   text-align: left;
@@ -212,30 +207,38 @@ main img {
 }
 /*forth-container*/
 .forth-container {
-  max-width: 1032px;
+  max-width: 1082px;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 120px auto 0;
+  margin: 120px auto;
 }
 .company-messages {
+  position: relative;
+  z-index: 1;
+  max-width: 567px;
   background-color: white;
   padding: 100px 139px 100px 62px;
-  max-width: 567px;
-  width: 100%;
-  text-align: left;
 }
 .address-message {
   margin-top: 50px;
 }
 .address-message li {
   display: flex;
-  gap: 43px;
+  text-align: left;
+  gap: 29px;
+}
+.address-message p {
   font-size: 14px;
   font-weight: 300;
   line-height: 2.5;
   font-family: Hiragino Kaku Gothic ProN;
+}
+.forth-container img {
+  position: absolute;
+  max-width: 547px;
+  z-index: 10;
+  right: 0;
 }
 .company h2 {
   font-size: 36px;
@@ -252,4 +255,212 @@ main img {
 .company li:nth-child(2) {
   text-decoration: underline;
   margin-top: 15px;
+}
+/*footer*/
+footer {
+  max-width: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 40px 200px 20px 200px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top p {
+  font-family: Hiragino Kaku Gothic ProN;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.footer-bottom {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.first-photo-mb {
+  display: none;
+}
+.about-mb {
+  display: none;
+}
+.footer-photo-mb {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .forth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .company-messages {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+  }
+  .address-message li {
+    text-align: left;
+    gap: 10px;
+  }
+  .forth-container img {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px){
+  .third-container {
+    margin: auto 16px;
+  }
+  .business-LR {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    gap: 30px;
+  }
+  .business-L {
+    margin-top: 0;
+  }
+  .picture {
+    margin-top: 30px;
+  }
+  .business-LR img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .business-LR p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .first-photo {
+    display: none;
+  }
+  .first-photo-mb {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-pc {
+    display: none;
+  }
+  .about-mb {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+
+  }
+  .footer-photo-pc {
+    display: none;
+  }
+  .footer-photo-mb {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  header button {
+    display: none;
+  }
+/**/
+  body {
+    max-width: 100%; /* 手机模式下取消固定宽度 */
+    overflow-x: hidden; /* 避免内容溢出视口 */
+  }
+  header {
+    display: flex;
+    flex-direction: column; /* 让 header 内的元素竖排 */
+    align-items: flex-start; /* 确保内容靠左对齐 */
+    padding: 10px 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .logo-nav {
+    display: flex;
+    flex-direction: column; /* 竖排布局 */
+    align-items: flex-start; /* 让 WED 靠左对齐 */
+    width: 100%; /* 占满整个宽度 */
+    margin-left: 0;
+  }
+
+  .logo-nav h1 {
+    font-size: 24px; /* 根据需要调整字体大小 */
+    margin-bottom: 10px; /* 给 WED 和导航栏添加一些间距 */
+  }
+
+  .nav-pc ul {
+    display: flex;
+    flex-direction: row; /* 保持导航项水平排列 */
+    justify-content: flex-start; /* 确保导航项靠左 */
+    width: 100%; /* 占满整个宽度 */
+    margin: 0;
+  }
+
+  .nav-pc li {
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 15px; /* 调整间距 */
+  }
+  footer {
+    padding: 0;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-left: 16px;
+  }
+  .footer-top p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .footer-bottom {
+    margin-top: 40px;
+    margin-left: 16px;
+  }
+
+
+
+
+
+
+/**/
+  header img{
+    max-width: 80px;
+  }
+  .second-container {
+    flex-direction: column;
+  }
+  .news-message {
+    flex-direction: column;
+  }
+  #item01 {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+
+  }
+  #item02 {
+    margin:30px 16px 0 16px
+  }
+  .second-container {
+    gap: 0;
+
+  }
+  .forth-container {
+    margin:120px auto 0;
+  }
+  .forth-container img {
+    margin-bottom: 0;
+  }
 }
