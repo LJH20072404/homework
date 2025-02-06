@@ -72,6 +72,7 @@ main {
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 .news li {
@@ -138,7 +139,7 @@ main {
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 15px;
+  letter-spacing: 5px;
 }
 .about-message li {
   font-size: 14px;
@@ -193,7 +194,7 @@ main {
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 .business li {
@@ -244,7 +245,7 @@ main {
   font-size: 36px;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 .company li {
@@ -371,13 +372,13 @@ footer {
   }
 /**/
   body {
-    max-width: 100%; /* 手机模式下取消固定宽度 */
-    overflow-x: hidden; /* 避免内容溢出视口 */
+    max-width: 100%;
+    overflow-x: hidden;
   }
   header {
     display: flex;
-    flex-direction: column; /* 让 header 内的元素竖排 */
-    align-items: flex-start; /* 确保内容靠左对齐 */
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px 16px;
     max-width: 100%;
     width: 100%;
@@ -385,29 +386,31 @@ footer {
 
   .logo-nav {
     display: flex;
-    flex-direction: column; /* 竖排布局 */
-    align-items: flex-start; /* 让 WED 靠左对齐 */
-    width: 100%; /* 占满整个宽度 */
+    flex-direction: column; 
+    align-items: flex-start;
+
+    max-width: 100%;
+    width: 100%;
     margin-left: 0;
   }
 
   .logo-nav h1 {
-    font-size: 24px; /* 根据需要调整字体大小 */
-    margin-bottom: 10px; /* 给 WED 和导航栏添加一些间距 */
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .nav-pc ul {
     display: flex;
-    flex-direction: row; /* 保持导航项水平排列 */
-    justify-content: flex-start; /* 确保导航项靠左 */
-    width: 100%; /* 占满整个宽度 */
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
     margin: 0;
   }
 
   .nav-pc li {
     font-size: 14px;
     font-weight: 300;
-    margin-right: 15px; /* 调整间距 */
+    margin-right: 15px;
   }
   footer {
     padding: 0;
@@ -462,5 +465,56 @@ footer {
   }
   .forth-container img {
     margin-bottom: 0;
+  }
+  /*company*/
+  .company-messages {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .forth-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .address-message li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: 300;
+  }
+  .address-message p:nth-child(2) {
+    margin-left: 10px;
+  }
+  .third-container {
+    margin-top: 80px;
+  }
+  /*first-container*/
+  .first-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .news-message a:nth-child(1) {
+    border: 0;
+    padding: 0;
+  }
+  .news-message a:nth-child(2) {
+    margin-left: 0;
+    border: 0;
+    padding: 0;
+  }
+  .news-message a:nth-child(3) {
+    margin-left: 0;
+  }
+  .news-message {
+    margin-top: 44px;
+    gap: 30px;
+  }
+  .nav-pc ul {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    gap: 24px;
+  }
+  .nav-pc li {
+    margin-right: 0;
   }
 }
